@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "54805df8-92f0-4d6f-8b38-fc0f06abffa3",
+		"name": "array-mutation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5001/api/documents",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"original\": {\n        \"_id\": 1,\n        \"name\": \"document1\",\n        \"posts\": [\n            {\"_id\": 2, \"value\": \"2\", \"mentions\": [] },\n            {\"_id\": 3, \"value\": \"3\", \"mentions\": [] },\n            {\"_id\": 4, \"value\": \"4\", \"mentions\": [] },\n            {\"_id\": 5, \"value\": \"5\", \"mentions\": [{\"_id\": 7, \"text\":\"new\"}] },\n            {\"_id\": 6, \"value\": \"6\", \"mentions\": []}\n        ]\n    },\n    \"mutation\": { \"posts\":[ \n        {\"_id\": 5, \"mentions\": [{\"_delete\":false, \"_id\": 7}, {\"text\":\"banana\"}]}\n    ] }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5001/api/documents",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"documents"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
