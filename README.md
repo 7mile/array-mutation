@@ -11,8 +11,8 @@
 **Step #1** - Clone the project
 
 ```bash
-$ git clone https://github.com/app-generator/api-server-nodejs.git
-$ cd api-server-nodejs
+$ git clone https://github.com/7mile/array-mutation.git
+$ cd array-mutation
 ```
 
 **Step #2** - Install dependencies via NPM or Yarn
@@ -35,7 +35,7 @@ The API server will start using the `PORT` specified in `.env` file (default 500
 
 ## API
 
-For a fast set up, use this POSTMAN file: [api_sample](https://github.com/app-generator/api-server-nodejs-pro/blob/master/media/api.postman_collection.json)
+For a fast set up, use this POSTMAN file: [api_sample](https://github.com/7mile/array-mutation/media/array-mutation.postman_collection.json)
 
 > **Update original document** - `api/documents`
 
