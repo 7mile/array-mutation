@@ -26,7 +26,7 @@ $ yarn
 **Step #3** - Start the API server (development mode)
 
 ```bash
-$ npm dev
+$ npm run dev
 // OR
 $ yarn dev
 ```
