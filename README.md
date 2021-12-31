@@ -26,7 +26,7 @@ $ yarn
 **Step #3** - Start the API server (development mode)
 
 ```bash
-$ npm dev
+$ npm run dev
 // OR
 $ yarn dev
 ```
@@ -35,7 +35,7 @@ The API server will start using the `PORT` specified in `.env` file (default 500
 
 ## API
 
-For a fast set up, use this POSTMAN file: [api_sample](https://github.com/7mile/array-mutation/media/array-mutation.postman_collection.json)
+For a fast set up, use this POSTMAN file: [api_sample](https://github.com/7mile/array-mutation/blob/main/media/array-mutation.postman_collection.json)
 
 > **Update original document** - `api/documents`
 
