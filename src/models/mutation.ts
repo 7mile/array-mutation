@@ -1,12 +1,5 @@
-export type Mutation = {
-    posts: [{
-        _id?: number,
-        value?: string,
-        _delete?: true
-        mentions: [{
-            _id?: number,
-            text?: string,
-            _delete?: true
-        }]
-    }]
-};
+import SubArray from "./subArray";
+
+type Mutation = SubArray<Mutation> & { _id?: number }
+
+export default Mutation;

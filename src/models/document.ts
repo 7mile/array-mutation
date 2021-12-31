@@ -1,13 +1,6 @@
-import { Searchable } from "src/interfaces/searchable";
-import Post from "./post";
+import { Searchable } from "../interfaces/searchable";
+import SubArray from "./subArray";
 
-export default class Document implements Searchable {
-    _id: number;
-    name: string;
-    posts: Post[];
-    constructor(_id: number, name: string, posts: Post[]) {
-        this._id = _id;
-        this.name = name;
-        this.posts = posts;
-    }
-}
+type Document = Searchable & SubArray<Document>;
+
+export default Document;

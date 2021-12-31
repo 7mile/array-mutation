@@ -1,10 +1,5 @@
 import 'dotenv/config';
 
-/*
-
-Copyright (c) 2019 - present AppSeed.us
-
-*/
 import express from 'express';
 
 import documentRoutes from '../routes/documents';
